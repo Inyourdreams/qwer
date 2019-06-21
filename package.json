@@ -1,0 +1,48 @@
+{
+  "homepage": "https://github.com/Inyourdreams/redux-listing",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "scripts": {
+    "build:css": "postcss src/tailwind.css -o src/index.css",
+    "watch:css": "postcss src/tailwind.css -o src/index.css -w",
+    "start": "npm run watch:css & react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "axios": "^0.19.0",
+    "postcss-cli": "^6.1.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-infinite-scroll-component": "^4.5.2",
+    "react-loader-spinner": "^2.3.0",
+    "react-redux": "^7.1.0",
+    "react-scripts": "^3.0.1",
+    "redux": "^4.0.1",
+    "tailwind-react-ui": "^0.8.1",
+    "tailwindcss": "^1.0.4"
+  }
+}
